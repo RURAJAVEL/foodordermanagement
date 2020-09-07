@@ -1,0 +1,18 @@
+﻿@font-face {
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 400;
+  /*src: local('Arimo'), url(https://blueberrit.com/assets/font/f/HNu4Nzh6q8Es60EMNZhs9w.woff2) format('woff2');*/
+}
+@font-face {
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 700;
+  /*src: local('Arimo Bold'), local('Arimo-Bold'), url(https://blueberrit.com/assets/font/f/27rE5lMk9EHpLbxiIuGd0PesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');*/
+}
+@font-face {
+  font-family: 'Arimo';
+  font-style: italic;
+  font-weight: 700;
+  /*src: local('Arimo Bold Italic'), local('Arimo-BoldItalic'), url(https://blueberrit.com/assets/font/f/_K7sg-ijHdmkwPzV9FiqaPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');*/
+}

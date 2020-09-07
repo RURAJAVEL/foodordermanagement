@@ -1,0 +1,728 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{C9D102C8-5BFA-46FA-8A1C-1D7DD33470AF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>BlueBerrit</RootNamespace>
+    <AssemblyName>BlueBerrit</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>BlueBerrit.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>BlueBerrit.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\..\..\..\..\PROJECT SOFTWARE\APPLICATION SOFTWARE\CP FOODS\16 JUN 2015\NIRASIGOLD\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.Routing" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\animate.min.css" />
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\fancybox\blank.gif" />
+    <Content Include="assets\css\fancybox\fancybox_loading.gif" />
+    <Content Include="assets\css\fancybox\fancybox_overlay.png" />
+    <Content Include="assets\css\fancybox\fancybox_sprite.png" />
+    <Content Include="assets\css\font-awesome.min.css" />
+    <Content Include="assets\css\style2.css" />
+    <Content Include="assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\font\font1.css" />
+    <Content Include="assets\font\font2.css" />
+    <Content Include="assets\font\font3.css" />
+    <Content Include="assets\img\catering\1.jpg" />
+    <Content Include="assets\img\catering\2.jpg" />
+    <Content Include="assets\img\catering\3.jpg" />
+    <Content Include="assets\img\catering\4.jpg" />
+    <Content Include="assets\img\cover\car.jpg" />
+    <Content Include="assets\img\cover\catering.jpg" />
+    <Content Include="assets\img\cover\contact.jpg" />
+    <Content Include="assets\img\cover\home.jpg" />
+    <Content Include="assets\img\cover\sv-bg.jpg" />
+    <Content Include="assets\img\ct\1.jpg" />
+    <Content Include="assets\img\ct\2.jpg" />
+    <Content Include="assets\img\ct\3.jpg" />
+    <Content Include="assets\img\ct\cc\1.jpg" />
+    <Content Include="assets\img\ct\cc\2.jpg" />
+    <Content Include="assets\img\ct\cc\3.jpg" />
+    <Content Include="assets\img\ct\cc\4.jpg" />
+    <Content Include="assets\img\ct\pc\1.jpg" />
+    <Content Include="assets\img\ct\pc\2.jpg" />
+    <Content Include="assets\img\ct\wc\1.jpg" />
+    <Content Include="assets\img\ct\wc\2.jpg" />
+    <Content Include="assets\img\ct\wc\3.jpg" />
+    <Content Include="assets\img\ct\wc\4.jpg" />
+    <Content Include="assets\img\ct\wc\5.jpg" />
+    <Content Include="assets\img\work\2.png" />
+    <Content Include="assets\img\work\3.png" />
+    <Content Include="assets\img\work\4.png" />
+    <Content Include="assets\img\work\5.png" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\html5shiv.js" />
+    <Content Include="assets\js\imagesloaded.min.js" />
+    <Content Include="assets\js\isotope.pkgd.min.js" />
+    <Content Include="assets\js\jquery.appear.min.js" />
+    <Content Include="assets\js\jquery.cslider.js" />
+    <Content Include="assets\js\jquery.isotope.js" />
+    <Content Include="assets\js\jquery.min.js" />
+    <Content Include="assets\js\jquery.nav.min.js" />
+    <Content Include="assets\js\jquery.scrollTo.min.js" />
+    <Content Include="assets\js\modernizr-latest.js" />
+    <Content Include="assets\js\respond.min.js" />
+    <Content Include="assets\js\script.js" />
+    <Content Include="assets\js\twitterFetcher.min.js" />
+    <Content Include="bbadmin\css\default.css" />
+    <Content Include="bbadmin\css\layout4.css" />
+    <Content Include="bbadmin\css\rasi.css" />
+    <Content Include="bbadmin\css\sales.css" />
+    <Content Include="bbadmin\css\style.css" />
+    <Content Include="bbadmin\Default.aspx" />
+    <Content Include="bbadmin\frmauthlocation.aspx" />
+    <Content Include="bbadmin\frmauthmenu.aspx" />
+    <Content Include="bbadmin\frmReviewControl.aspx" />
+    <Content Include="bbadmin\frmRemoveOrder.aspx" />
+    <Content Include="bbadmin\frmRemoveWeekMenu.aspx" />
+    <Content Include="bbadmin\frmtimezone.aspx" />
+    <Content Include="bbadmin\frmauthoffice.aspx" />
+    <Content Include="bbadmin\frmcustomerlist.aspx" />
+    <Content Include="bbadmin\frmauthweekmenu.aspx" />
+    <Content Include="bbadmin\frmauthrestaurant.aspx" />
+    <Content Include="bbadmin\frmlocationmaster.aspx" />
+    <Content Include="bbadmin\frmofficemaster.aspx" />
+    <Content Include="bbadmin\frmrestaurantmenu.aspx" />
+    <Content Include="bbadmin\frmOrdersProcessing.aspx" />
+    <Content Include="bbadmin\frmweekmenu.aspx" />
+    <Content Include="bbadmin\frmrestaurentmaster.aspx" />
+    <Content Include="bbadmin\frmDailyMenuNotification.aspx" />
+    <Content Include="bbadmin\images\Background.png" />
+    <Content Include="bbadmin\images\Calendar.jpg" />
+    <Content Include="bbadmin\images\Calendar1.jpg" />
+    <Content Include="bbadmin\images\Cancel.jpg" />
+    <Content Include="bbadmin\images\delete.jpg" />
+    <Content Include="bbadmin\images\Edit.jpg" />
+    <Content Include="bbadmin\images\img01.jpg" />
+    <Content Include="bbadmin\images\img02.gif" />
+    <Content Include="bbadmin\images\img02.jpg" />
+    <Content Include="bbadmin\images\img03.jpg" />
+    <Content Include="bbadmin\images\img04.jpg" />
+    <Content Include="bbadmin\images\minus.png" />
+    <Content Include="bbadmin\images\payroll.jpg" />
+    <Content Include="bbadmin\images\payroll.png" />
+    <Content Include="bbadmin\images\plus.png" />
+    <Content Include="bbadmin\images\update.jpg" />
+    <Content Include="bbadmin\BBAdmin.Master" />
+    <Content Include="assets\font\f\toadOcfmlt9b38dHJxOBGCOFnW3Jk0f09zW_Yln67Ac.woff2" />
+    <Content Include="assets\font\f\toadOcfmlt9b38dHJxOBGOode0-EuMkY--TSyExeINg.woff2" />
+    <Content Include="assets\font\f\-_Ctzj9b56b8RgXW8FArifk_vArhqVIZ0nv9q090hN8.woff2" />
+    <Content Include="assets\font\f\0dTEPzkLWceF7z0koJaX1A.woff2" />
+    <Content Include="assets\font\f\1ImRNPx4870-D9a1EBUdPPk_vArhqVIZ0nv9q090hN8.woff2" />
+    <Content Include="assets\font\f\8KhZd3VQBtXTAznvKjw-k_k_vArhqVIZ0nv9q090hN8.woff2" />
+    <Content Include="assets\font\f\CcKI4k9un7TZVWzRVT-T8_k_vArhqVIZ0nv9q090hN8.woff2" />
+    <Content Include="assets\font\f\JbtMzqLaYbbbCL9X6EvaI_k_vArhqVIZ0nv9q090hN8%281%29.woff2" />
+    <Content Include="assets\font\f\JbtMzqLaYbbbCL9X6EvaI_k_vArhqVIZ0nv9q090hN8.woff2" />
+    <Content Include="assets\font\f\PKCRbVvRfd5n7BTjtGiFZPk_vArhqVIZ0nv9q090hN8.woff2" />
+    <Content Include="assets\font\f\RJMlAoFXXQEzZoMSUteGWFtXRa8TVwTICgirnJhmVJw.woff2" />
+    <Content Include="assets\font\f\xkvoNo9fC8O2RDydKj12b_k_vArhqVIZ0nv9q090hN8.woff2" />
+    <None Include="bbadmin\scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="bbadmin\scripts\jquery-1.4.1.js" />
+    <Content Include="bbadmin\scripts\jquery-1.4.1.min.js" />
+    <Content Include="bbadmin\threats\Tuesday, June 23, 2015.html" />
+    <Content Include="bbadmin\frmTodayOrders.aspx" />
+    <Content Include="bbadmin\frmrestaurantEdit.aspx" />
+    <Content Include="bbadmin\frmrestaurantmenuedit.aspx" />
+    <Content Include="bbadmin\frmweekMenuNotification.aspx" />
+    <Content Include="BlueBerritJobs.aspx" />
+    <Content Include="BlueBerritRestaurants.aspx" />
+    <Content Include="Blueberrit_weddingcatering.aspx" />
+    <Content Include="Blueberrit_Privatecatering.aspx" />
+    <Content Include="Blueberrit_corporatecatering.aspx" />
+    <Content Include="Blueberrit_catering.aspx" />
+    <Content Include="Blueberrit_aboutus.aspx" />
+    <Content Include="fp\burger.png" />
+    <Content Include="fp\burger_bg.png" />
+    <Content Include="fp\Pizza.png" />
+    <Content Include="fp\Pizza_bg.png" />
+    <Content Include="fp\style.css" />
+    <Content Include="Images\buildings.png" />
+    <Content Include="Images\footer-bg.jpg" />
+    <Content Include="Images\gallery_bg_img.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="mailing\CustCateringMail.html" />
+    <Content Include="mailing\DailyMenuNotification.html" />
+    <Content Include="mailing\CustVerification.html" />
+    <Content Include="mailing\m_enquiryCateringAdmin.html" />
+    <Content Include="mailing\m_enquiryCustomer.html" />
+    <Content Include="mailing\m_enquiryadmin.html" />
+    <Content Include="mailing\OrderDelivered.html" />
+    <Content Include="mailing\OrderPlacedBank.html" />
+    <Content Include="mailing\OrderPlaced.html" />
+    <Content Include="m_default.aspx" />
+    <Content Include="Images\cod.jpg" />
+    <Content Include="Images\reviews.png" />
+    <Content Include="Images\viewall.jpg" />
+    <Content Include="BlueBerritRestaurantMenu.aspx" />
+    <Content Include="mailing\weekMenuNotification.html" />
+    <Content Include="ResponseHandling.aspx" />
+    <Content Include="ReviewOrders.aspx" />
+    <Content Include="Credentialchange.aspx" />
+    <Content Include="Images\trackorder.png" />
+    <Content Include="OrderConfirmation.aspx" />
+    <Content Include="CustReferral.aspx" />
+    <Content Include="forgotCredential.aspx" />
+    <Content Include="CustActivation.aspx" />
+    <Content Include="Images\close.png" />
+    <Content Include="Images\logo.jpg" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="CustProfile.aspx" />
+    <Content Include="cart.aspx" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\cartstyle.css" />
+    <Content Include="css\component.css" />
+    <Content Include="css\form.css" />
+    <Content Include="css\megamenu.css" />
+    <Content Include="css\normalize.css" />
+    <Content Include="css\style.css" />
+    <Content Include="Images\accent.png" />
+    <Content Include="Images\bullet.png" />
+    <Content Include="Images\heroAccent.png" />
+    <Content Include="Images\orderedList0.png" />
+    <Content Include="Images\orderedList1.png" />
+    <Content Include="Images\orderedList2.png" />
+    <Content Include="Images\orderedList3.png" />
+    <Content Include="Images\orderedList4.png" />
+    <Content Include="Images\orderedList5.png" />
+    <Content Include="Images\orderedList6.png" />
+    <Content Include="Images\orderedList7.png" />
+    <Content Include="Images\orderedList8.png" />
+    <Content Include="Images\orderedList9.png" />
+    <Content Include="default.aspx" />
+    <Content Include="Images\pic-2.jpg" />
+    <Content Include="index.aspx" />
+    <Content Include="js\easyResponsiveTabs.js" />
+    <Content Include="js\jquery.easydropdown.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\megamenu.js" />
+    <Content Include="js\modernizr.custom.js" />
+    <Content Include="js\simpleCart.min.js" />
+    <Content Include="assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\fonts\FontAwesome.otf" />
+    <Content Include="mailing\enquiry.html" />
+    <Content Include="mailing\enquiryadmin.html" />
+    <None Include="My Project\PublishProfiles\blueberrit.com.pubxml" />
+    <None Include="My Project\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
+    <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="txtslider\animate.min.css" />
+    <Content Include="txtslider\jquery.easing.min.js" />
+    <Content Include="txtslider\jquery.liquid-slider.min.js" />
+    <Content Include="txtslider\jquery.min.js" />
+    <Content Include="txtslider\jquery.touchSwipe.min.js" />
+    <Content Include="txtslider\liquid-slider.css" />
+    <Content Include="UIimages\restaurantprofile\01010101\01010101.jpg" />
+    <Content Include="UIimages\restaurantprofile\01010101\menuprofile\010101010001.jpg" />
+    <Content Include="UIimages\restaurantprofile\01010101\menuprofile\010101010002.jpg" />
+    <Content Include="UIimages\restaurantprofile\01010101\menuprofile\010101010003.jpg" />
+    <Content Include="UIimages\restaurantprofile\01010102\menuprofile\010101020001.jpg" />
+    <Content Include="UIimages\restaurantprofile\01010102\menuprofile\010101020002.jpg" />
+    <Content Include="UIimages\restaurantprofile\01010102\menuprofile\010101020003.jpg" />
+    <Content Include="UIimages\restaurantprofile\01010103\menuprofile\010101030001.jpg" />
+    <Content Include="UIimages\restaurantprofile\01010103\menuprofile\010101030002.jpg" />
+    <Content Include="UIimages\restaurantprofile\01010103\menuprofile\010101030003.jpg" />
+    <Content Include="UIimages\restaurantprofile\01010104\menuprofile\010101040001.jpg" />
+    <Content Include="UIimages\restaurantprofile\01010104\menuprofile\010101040002.jpg" />
+    <Content Include="UIimages\restaurantprofile\01010104\menuprofile\010101040003.jpg" />
+    <Content Include="UIimages\restaurantprofile\01010105\menuprofile\010101050001.jpg" />
+    <Content Include="UIimages\restaurantprofile\01010105\menuprofile\010101050002.jpg" />
+    <Content Include="UIimages\restaurantprofile\01010105\menuprofile\010101050003.jpg" />
+    <Content Include="UIimages\restaurantprofile\01010106\menuprofile\010101060001.jpg" />
+    <Content Include="UIimages\restaurantprofile\01010106\menuprofile\010101060002.jpg" />
+    <Content Include="UIimages\restaurantprofile\01010106\menuprofile\010101060003.jpg" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bbadmin\BBAdmin.Master.designer.vb">
+      <DependentUpon>BBAdmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="bbadmin\BBAdmin.Master.vb">
+      <DependentUpon>BBAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bbadmin\Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bbadmin\Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bbadmin\frmauthlocation.aspx.designer.vb">
+      <DependentUpon>frmauthlocation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bbadmin\frmauthlocation.aspx.vb">
+      <DependentUpon>frmauthlocation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bbadmin\frmauthmenu.aspx.designer.vb">
+      <DependentUpon>frmauthmenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bbadmin\frmauthmenu.aspx.vb">
+      <DependentUpon>frmauthmenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bbadmin\frmReviewControl.aspx.designer.vb">
+      <DependentUpon>frmReviewControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bbadmin\frmReviewControl.aspx.vb">
+      <DependentUpon>frmReviewControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bbadmin\frmRemoveOrder.aspx.designer.vb">
+      <DependentUpon>frmRemoveOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bbadmin\frmRemoveOrder.aspx.vb">
+      <DependentUpon>frmRemoveOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bbadmin\frmRemoveWeekMenu.aspx.designer.vb">
+      <DependentUpon>frmRemoveWeekMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bbadmin\frmRemoveWeekMenu.aspx.vb">
+      <DependentUpon>frmRemoveWeekMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bbadmin\frmtimezone.aspx.designer.vb">
+      <DependentUpon>frmtimezone.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bbadmin\frmtimezone.aspx.vb">
+      <DependentUpon>frmtimezone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bbadmin\frmauthoffice.aspx.designer.vb">
+      <DependentUpon>frmauthoffice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bbadmin\frmauthoffice.aspx.vb">
+      <DependentUpon>frmauthoffice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bbadmin\frmcustomerlist.aspx.designer.vb">
+      <DependentUpon>frmcustomerlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bbadmin\frmcustomerlist.aspx.vb">
+      <DependentUpon>frmcustomerlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bbadmin\frmauthweekmenu.aspx.designer.vb">
+      <DependentUpon>frmauthweekmenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bbadmin\frmauthweekmenu.aspx.vb">
+      <DependentUpon>frmauthweekmenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bbadmin\frmauthrestaurant.aspx.designer.vb">
+      <DependentUpon>frmauthrestaurant.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bbadmin\frmauthrestaurant.aspx.vb">
+      <DependentUpon>frmauthrestaurant.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bbadmin\frmlocationmaster.aspx.designer.vb">
+      <DependentUpon>frmlocationmaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bbadmin\frmlocationmaster.aspx.vb">
+      <DependentUpon>frmlocationmaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bbadmin\frmofficemaster.aspx.designer.vb">
+      <DependentUpon>frmofficemaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bbadmin\frmofficemaster.aspx.vb">
+      <DependentUpon>frmofficemaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bbadmin\frmrestaurantmenu.aspx.designer.vb">
+      <DependentUpon>frmrestaurantmenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bbadmin\frmrestaurantmenu.aspx.vb">
+      <DependentUpon>frmrestaurantmenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bbadmin\frmOrdersProcessing.aspx.designer.vb">
+      <DependentUpon>frmOrdersProcessing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bbadmin\frmOrdersProcessing.aspx.vb">
+      <DependentUpon>frmOrdersProcessing.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="bbadmin\frmweekmenu.aspx.designer.vb">
+      <DependentUpon>frmweekmenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bbadmin\frmweekmenu.aspx.vb">
+      <DependentUpon>frmweekmenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bbadmin\frmrestaurentmaster.aspx.designer.vb">
+      <DependentUpon>frmrestaurentmaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bbadmin\frmrestaurentmaster.aspx.vb">
+      <DependentUpon>frmrestaurentmaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bbadmin\frmTodayOrders.aspx.designer.vb">
+      <DependentUpon>frmTodayOrders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bbadmin\frmTodayOrders.aspx.vb">
+      <DependentUpon>frmTodayOrders.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="bbadmin\frmrestaurantEdit.aspx.designer.vb">
+      <DependentUpon>frmrestaurantEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bbadmin\frmrestaurantEdit.aspx.vb">
+      <DependentUpon>frmrestaurantEdit.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="bbadmin\frmrestaurantmenuedit.aspx.designer.vb">
+      <DependentUpon>frmrestaurantmenuedit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bbadmin\frmrestaurantmenuedit.aspx.vb">
+      <DependentUpon>frmrestaurantmenuedit.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="bbadmin\frmDailyMenuNotification.aspx.designer.vb">
+      <DependentUpon>frmDailyMenuNotification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bbadmin\frmDailyMenuNotification.aspx.vb">
+      <DependentUpon>frmDailyMenuNotification.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="bbadmin\frmweekMenuNotification.aspx.designer.vb">
+      <DependentUpon>frmweekMenuNotification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bbadmin\frmweekMenuNotification.aspx.vb">
+      <DependentUpon>frmweekMenuNotification.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BlueBerritJobs.aspx.designer.vb">
+      <DependentUpon>BlueBerritJobs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BlueBerritJobs.aspx.vb">
+      <DependentUpon>BlueBerritJobs.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BlueBerritRestaurants.aspx.designer.vb">
+      <DependentUpon>BlueBerritRestaurants.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BlueBerritRestaurants.aspx.vb">
+      <DependentUpon>BlueBerritRestaurants.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BlueBerritRestaurantMenu.aspx.designer.vb">
+      <DependentUpon>BlueBerritRestaurantMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BlueBerritRestaurantMenu.aspx.vb">
+      <DependentUpon>BlueBerritRestaurantMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Blueberrit_weddingcatering.aspx.designer.vb">
+      <DependentUpon>Blueberrit_weddingcatering.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Blueberrit_weddingcatering.aspx.vb">
+      <DependentUpon>Blueberrit_weddingcatering.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Blueberrit_Privatecatering.aspx.designer.vb">
+      <DependentUpon>Blueberrit_Privatecatering.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Blueberrit_Privatecatering.aspx.vb">
+      <DependentUpon>Blueberrit_Privatecatering.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Blueberrit_corporatecatering.aspx.designer.vb">
+      <DependentUpon>Blueberrit_corporatecatering.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Blueberrit_corporatecatering.aspx.vb">
+      <DependentUpon>Blueberrit_corporatecatering.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Blueberrit_catering.aspx.designer.vb">
+      <DependentUpon>Blueberrit_catering.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Blueberrit_catering.aspx.vb">
+      <DependentUpon>Blueberrit_catering.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Blueberrit_aboutus.aspx.designer.vb">
+      <DependentUpon>Blueberrit_aboutus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Blueberrit_aboutus.aspx.vb">
+      <DependentUpon>Blueberrit_aboutus.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="m_default.aspx.designer.vb">
+      <DependentUpon>m_default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="m_default.aspx.vb">
+      <DependentUpon>m_default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResponseHandling.aspx.designer.vb">
+      <DependentUpon>ResponseHandling.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResponseHandling.aspx.vb">
+      <DependentUpon>ResponseHandling.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ReviewOrders.aspx.designer.vb">
+      <DependentUpon>ReviewOrders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewOrders.aspx.vb">
+      <DependentUpon>ReviewOrders.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Credentialchange.aspx.designer.vb">
+      <DependentUpon>Credentialchange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Credentialchange.aspx.vb">
+      <DependentUpon>Credentialchange.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="OrderConfirmation.aspx.designer.vb">
+      <DependentUpon>OrderConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderConfirmation.aspx.vb">
+      <DependentUpon>OrderConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CustReferral.aspx.designer.vb">
+      <DependentUpon>CustReferral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustReferral.aspx.vb">
+      <DependentUpon>CustReferral.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="forgotCredential.aspx.designer.vb">
+      <DependentUpon>forgotCredential.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forgotCredential.aspx.vb">
+      <DependentUpon>forgotCredential.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CustActivation.aspx.designer.vb">
+      <DependentUpon>CustActivation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustActivation.aspx.vb">
+      <DependentUpon>CustActivation.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CustProfile.aspx.designer.vb">
+      <DependentUpon>CustProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustProfile.aspx.vb">
+      <DependentUpon>CustProfile.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="cart.aspx.designer.vb">
+      <DependentUpon>cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cart.aspx.vb">
+      <DependentUpon>cart.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="references\DataBind.vb" />
+    <Compile Include="references\DataError.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="references\DataService.vb" />
+    <Compile Include="references\SPCall.vb" />
+    <Compile Include="references\SPDataBind.vb" />
+    <Compile Include="references\SPDataService.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\img\team\" />
+    <Folder Include="threats\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1422/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

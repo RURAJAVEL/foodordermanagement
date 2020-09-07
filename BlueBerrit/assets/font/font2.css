@@ -1,0 +1,54 @@
+﻿@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 100;
+  /*src: local('Raleway Thin'), local('Raleway-Thin'), url(https://blueberrit.com/assets/font/f/RJMlAoFXXQEzZoMSUteGWFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');*/
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 200;
+  /*src: local('Raleway ExtraLight'), local('Raleway-ExtraLight'), url(https://blueberrit.com/assets/font/f/8KhZd3VQBtXTAznvKjw-k_k_vArhqVIZ0nv9q090hN8.woff2) format('woff2');*/
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  /*src: local('Raleway Light'), local('Raleway-Light'), url(https://blueberrit.com/assets/font/f/-_Ctzj9b56b8RgXW8FArifk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');*/
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  /*src: local('Raleway'), url(https://blueberrit.com/assets/font/f/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');*/
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  /*src: local('Raleway Medium'), local('Raleway-Medium'), url(https://blueberrit.com/assets/font/f/CcKI4k9un7TZVWzRVT-T8_k_vArhqVIZ0nv9q090hN8.woff2) format('woff2');*/
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  /*src: local('Raleway SemiBold'), local('Raleway-SemiBold'), url(https://blueberrit.com/assets/font/f/xkvoNo9fC8O2RDydKj12b_k_vArhqVIZ0nv9q090hN8.woff2) format('woff2');*/
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  /*src: local('Raleway Bold'), local('Raleway-Bold'), url(https://blueberrit.com/assets/font/f/JbtMzqLaYbbbCL9X6EvaI_k_vArhqVIZ0nv9q090hN8.woff2) format('woff2');*/
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  /*src: local('Raleway ExtraBold'), local('Raleway-ExtraBold'), url(https://blueberrit.com/assets/font/f/1ImRNPx4870-D9a1EBUdPPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');*/
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 900;
+  /*src: local('Raleway Heavy'), local('Raleway-Heavy'), url(https://blueberrit.com/assets/font/f/PKCRbVvRfd5n7BTjtGiFZPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');*/
+}

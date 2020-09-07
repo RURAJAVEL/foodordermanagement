@@ -1,0 +1,12 @@
+﻿@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  /*src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://blueberrit.com/assets/font/f/toadOcfmlt9b38dHJxOBGOode0-EuMkY--TSyExeINg.woff2) format('woff2');*/
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  /*src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(https://blueberrit.com/assets/font/f/toadOcfmlt9b38dHJxOBGCOFnW3Jk0f09zW_Yln67Ac.woff2) format('woff2');*/
+}

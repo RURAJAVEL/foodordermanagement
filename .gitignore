@@ -1,0 +1,16 @@
+/.vs/BlueBerrit/config/applicationhost.config
+/.vs/BlueBerrit/v15/.suo
+/.vs/BlueBerrit/v15/Server/sqlite3/db.lock
+/.vs/BlueBerrit/v15/Server/sqlite3/storage.ide
+/.vs/BlueBerrit/v16/.suo
+/.vs/config/applicationhost.config
+/BlueBerrit/obj/Debug/*
+/packages/*
+/BlueBerrit/bbadmin/*
+/BlueBerrit/bin/*
+/BlueBerrit/Images/*
+/BlueBerrit/mailing/*
+/BlueBerrit/My Project/*
+/BlueBerrit/obj/*
+/BlueBerrit/threats/*
+/BlueBerrit/UIimages/*

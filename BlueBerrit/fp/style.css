@@ -1,0 +1,160 @@
+
+
+.tagline {
+  background: none repeat scroll 0 0 #1c2c39;
+  color: #fff;
+  font-size: 23px;
+  font-weight: inherit;
+  line-height: 30px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  text-align: center;
+}
+
+
+
+
+
+.tagline h1, .tagline h2 {
+    color:#fff;
+}
+
+.tagline h3,.tagline h4 {
+    color:#CCC;
+    font-weight:200
+}
+
+
+
+/* CSS3 animations for foods slider */
+.twosecdelay {
+    -webkit-animation-delay:2s;
+    -moz-animation-delay:2s
+}
+
+.threesecdelay {
+    -webkit-animation-delay:3s;
+    -moz-animation-delay:3s
+}
+
+.foodpizzawrapper {
+    background:url(/fp/pizza_bg.png) repeat scroll 0 0 transparent;
+    display:inline-block;
+    height:400px;
+    margin:0 0 0 160px;
+    position:fixed;
+    width:400px;
+    left:50%;
+}
+
+.foodburgerwrapper {
+    background:url(/fp/burger_bg.png) repeat scroll 0 0 transparent;
+    display:inline-block;
+    height:400px;
+    margin:0 0 0 -570px;
+    position:fixed;
+    width:400px;
+    left:50%;
+
+  
+	
+
+}
+
+.homeversion .foodburgerwrapper {
+    margin:0px 0 0 -570px;
+}
+
+.homeversion .foodpizzawrapper {
+    margin:0px 0 0 160px;
+}
+
+.foodnoodleswrapper {
+    background:url(/wp-content/themes/foodpanda/img/foods/noodles_bg.png) repeat scroll 0 0 transparent;
+    display:inline-block;
+    height:400px;
+    margin:0 0 0 -570px;
+    position:fixed;
+    width:400px;
+    left:50%;
+}
+
+.foodblankleftwrapper {
+    display:inline-block;
+    height:400px;
+    margin:0px 0 0 -570px;
+    position:fixed;
+    width:400px
+}
+
+.foodblankrightwrapper {
+    display:inline-block;
+    height:400px;
+    margin:0px 0 0 160px;
+    position:fixed;
+    width:400px
+}
+
+
+
+/* homeslider styles */
+.homeversion {
+  padding: 100px 0;
+}
+
+
+
+
+
+/* end foodpandastyles */
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE - smart phone optimisations */
+@media only screen and (max-width: 440px) {
+
+/* setup animation properly */
+.homeversion {
+  padding-bottom: 130px;
+  padding-top: 130px;
+}
+
+.foodpizzawrapper {
+    background-position:0 0;
+    background-repeat:no-repeat;
+    background-size:100% auto;
+    min-width:200px;
+    position:absolute;
+    right:0;
+    top:315px;
+    width:100%;
+left:inherit;
+}
+
+.foodburgerwrapper {
+    display:none;
+}
+
+/* homepage adjustments */
+.homeversion .food-pizza-wrapper {
+    top:295px;
+}
+
+
+
+
+.tagline h1 {
+    font-size:21.5px!important;
+}
+
+.tagline h2 {
+    font-size:16px!important;
+}
+  
+}

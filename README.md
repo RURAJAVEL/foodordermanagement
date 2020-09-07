@@ -7,5 +7,5 @@ Technology used : .net , asp web pages , MSSQL , html for mailing system and dem
 
 Reference for landing page is provide below 
 
-
+![alt text](https://github.com/RURAJAVEL/foodordermanagement/blob/master/BlueBerrit/demo/FoodOrderManagement.PNG)
 

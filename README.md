@@ -5,7 +5,7 @@ And offering categories is veg , non-veg and lite .Based on that individual can 
 Our platform is providing next entire week menu on sunday itself and ordering system is highly associated with employer.
 Technology used : .net , asp web pages , MSSQL , html for mailing system and demo payment gateway is include 
 
-Reference for landing page is provide below 
+Reference for landing page is provide in below URL
 
 
 
